@@ -29,8 +29,8 @@
               </button>
               <div class="collapse navbar-collapse" id="humoNavbar">
                   <ul class="navbar-nav justify-content-between">
-                      <li class="nav-item active"><a class="nav-link active" href="#"> Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="aboutus.html"> About Us</a></li>
+                      <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                      <li class="nav-item active"><a class="nav-link active" href="#"> About Us</a></li>
                       <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">News</a></li>
@@ -38,7 +38,7 @@
                   </ul>
                   <span class="navbar-text ml-auto">
                     <span class="pr-3">
-                        <a role="button" href="checkout.html">
+                        <a role="button" data-toggle="modal" data-target="#cartModal">
                             <i class="fa fa-shopping-cart"></i> Cart   
                         </a>
                     </span>
@@ -52,6 +52,7 @@
           </div>
       </nav>
     </header>
+
 
     <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-image">
       <div class="bg-overlay">
@@ -68,7 +69,7 @@
         <div class="col-sm-4 col-md-4 mx-md-5">
             <h2>Discover</h2>
             <p class="d-sm-block">Etiam venenatis sed felis vitae vulputate. Donec ante metus, fringilla ut auctor sed, rutrum eget lorem. Vivamus ultricies tellus purus, ac tempor magna eleifend non. Aenean vehicula tempor ipsum eget venenatis. In eu leo dapibus, dapibus ante scelerisque, suscipit nibh. Sed diam nisl, sollicitudin sit amet laoreet vitae, ultrices vel tortor. Nulla vehicula interdum sapien, vitae ultricies nunc ultricies eu.</p>
-            <a class="btn btn-outline-dark text-uppercase" href="aboutus.html">View Our Story</a>
+            <button class="btn btn-outline-dark text-uppercase">Discover</button>
         </div>
 
         <div class="col-sm-6 ml-md-3 mt-5">
@@ -115,21 +116,19 @@
 
     <div class="container-fluid bg-dark mt-4">
         <div class="container">
-            <div class="row py-3">
-                <div class="col-12">
+            <div class="row row-content">
+                <div class="col-12 pb-3">
                     <h2 class="text-white text-center">Sign up for our Newsletter</h2>
                 </div>
-            </div>
-            <div class="row py-3">    
-                <div class="col col-md-10">
-                    <form>
+                <div class="col-md-10">
+                    <form class="m-auto">
                         <div class="form-group row">
                             <div class="col-md-5">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
                             </div>
                             <div class="form-group row">
                                 <div class="offset-md-2">
-                                    <button type="submit" class="btn btn-outline-light text-nowrap">Sign Up</button>
+                                    <button type="submit" class="btn btn-outline-light text-nowrap">Send Feedback</button>
                                 </div>
                             </div>
                         </div>

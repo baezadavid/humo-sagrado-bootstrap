@@ -1,5 +1,20 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 360px; /* Margin bottom by footer height */
+}
+.site-footer {
+  border-top: 1px solid  rgb(24, 24, 24);
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 360px; /* Set the fixed height of the footer here */
+  background-color: #f0f0f0;
 }
 
 h1, h2, h3, h4 {
@@ -22,7 +37,7 @@ h4 {
 }
 
 .nav-item {
-  padding-left: 25px;
+  padding-left: .5em;
 }
 
 .jumbotron {
@@ -62,6 +77,26 @@ header .logo {
       color: inherit;
       text-decoration: none; }
 
-.site-footer {
-  border-top: 1px solid  rgb(24, 24, 24);
-}      
+
+#experienceCarousel .carousel-inner {
+  max-height: 450px;
+}
+#experienceCarousel .carousel-inner img {
+  margin: 0px auto;
+}
+#experienceCarousel .carousel-caption {
+  color: white;
+    margin: 0px auto;
+    padding: 30px;
+    text-align: center;
+    max-width: 550px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }

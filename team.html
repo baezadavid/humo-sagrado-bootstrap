@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags always come first -->
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- build:css css/main.css -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+     <link rel="stylesheet" href="css/styles.css" />
+     <!-- endbuild -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pirata+One|Open+Sans" />
+
+    <title>Humo Sagrado</title>
+</head>
+
+
+<body>
+
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-humo-sagrado-white-png" height="60" width="144 " /> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#humoNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="humoNavbar">
+                  <ul class="navbar-nav justify-content-between">
+                      <li class="nav-item active"><a class="nav-link active" href="#"> Home</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownAboutLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAboutLink">
+                                <a class="dropdown-item" href="aboutus.html">Our Story</a>
+                                <a class="dropdown-item" href="#">Our Team</a>
+                            </div>
+                        </li>
+                      <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                  </ul>
+                  <span class="navbar-text ml-auto">
+                    <span class="pr-3">
+                        <a role="button" href="checkout.html">
+                            <i class="fa fa-shopping-cart"></i> Cart   
+                        </a>
+                    </span>
+                    <span>
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-shopping-bag"></i> Order Online
+                        </a>
+                    </span>
+                  </span>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+<div class="container team bg-light p-5">
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <a ><h4>David Baeza</h4></a>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+    </div>
+    
+
+</div>
+<footer class="container-fluid site-footer py-3">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-6 text-center col-sm-6">
+                <a href="#"><img class="d-block w-50 pb-3" src="img/logo-humo-sagrado-color-png" /></a>
+            </div>
+            <div class="col-6 col-sm-2">
+                <h5>Details</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="aboutus.html">About Us</a></li>
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Experience</a></li>
+                    <li><a class="text-muted" href="#">Events</a></li>
+                    <li><a class="text-muted" href="positions.html">Employment</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-2">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="contactus.html">Contact</a></li>
+                    <li><a class="text-muted" href="contactus.html">Locations</a></li>
+                    <li><a class="text-muted" href="#">News</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-2">
+                <h5>Order Online</h5>
+            </div>
+    
+        </div>
+        <div class="row border-top py-3 border-bottom">
+            <div class="col-sm-8 m-auto text-center">
+                <a class="btn btn-social-icon" href="http://instagram.com/"> <i class="fa fa-instagram"></i> </a>
+                <a class="btn btn-social-icon" href="http://facebook.com/"> <i class="fa fa-facebook"></i> </a>
+                <a class="btn btn-social-icon" href="http://twitter.com/"> <i class="fa fa-twitter"></i> </a>
+                <a class="btn btn-social-icon" href="http://youtube.com/"> <i class="fa fa-youtube"></i> </a>
+            </div>
+
+        </div>
+        <div class="row py-4">
+            <div class="col-6 m-auto text-center">
+                <small class="d-block text-muted">&copy; 2020 David Baeza Designs</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+ <!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

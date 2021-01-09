@@ -29,16 +29,22 @@
               </button>
               <div class="collapse navbar-collapse" id="humoNavbar">
                   <ul class="navbar-nav justify-content-between">
-                      <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="aboutus.html"> About Us</a></li>
+                      <li class="nav-item active"><a class="nav-link active" href="#"> Home</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownAboutLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAboutLink">
+                                <a class="dropdown-item" href="aboutus.html">Our Story</a>
+                                <a class="dropdown-item" href="#">Our Team</a>
+                            </div>
+                        </li>
                       <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                      <li class="nav-item active"><a class="nav-link active" href="#">Contact</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
                   </ul>
                   <span class="navbar-text ml-auto">
                     <span class="pr-3">
-                        <a role="button" data-toggle="modal" data-target="#cartModal">
+                        <a role="button" href="checkout.html">
                             <i class="fa fa-shopping-cart"></i> Cart   
                         </a>
                     </span>
@@ -53,100 +59,59 @@
       </nav>
     </header>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-image">
-    </div>
-    
     <div class="container">
         <div class="row">
             <div class="col">
                 <ol class="breadcrumb bg-transparent">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Contact</li>
+                    <li class="breadcrumb-item"><a href="experience.html">Experience</a></li>
+                    <li class="breadcrumb-item active">Product</li>
                 </ol>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 mt-4">
-                <h2>Contact Us</h2>
-                <hr />
-            </div>
-        </div>
 
-        <div class="row row-content">
-            <div class="col-sm-3 mb-5">
-                <h4>Our Address</h4>
-                <hr />
-                <address>
-                    123 Eating Drive<br />
-                    Chicago, IL 60610<br />
-                    U.S.A.
-                </address>
-                <i class="fa fa-phone"></i> 1-312-555-1234<br>
-            	<i class="fa fa-envelope-o"></i> humo@sacred.com
-            </div>
-            <div class="col-sm-9">
-                    <h4>Send us your Feedback</h4>
-                    <hr />
-                <div class="col">
-                    <form>
-                        <div class="form-group row">
-                            <label for="firstName" class="col-md-2 col-form-label">First Name</label> 
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label> 
-                            <div class="col-4 col-md-3">
-                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area Code"  />
-                            </div>
-                            <div class="col-7">
-                                <input type="tel" class="form-control" id="telNum" name="telNum" placeholder="Tel. number" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-md-2 col-form-label">Email</label> 
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col offset-md-2">
-                                May we contact you? 
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" /> 
-                                    <label for="contactYes" class="form-check-label">Yes</label> 
-                                </div>
-                                <div class="form-check  form-check-inline">
-                                    <input type="radio" class=" form-check-input" id="contactNo" name="contactRadios" value="no" /> 
-                                    <label for="contactNo" class="form-check-label">No</label>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                            <div class="col-md-10">
-                                <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-secondary">Send Feedback</button>
-                            </div>
-                        </div>
-                        </form>
-                </div>
-            </div>
         </div>
-
     </div>
 
+    <div class="container py-5 mb-3">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <img class="w-75" src="img/roasted-corn.jpg"  >
+            </div>
+            <div class="col-sm-6 mb-3">
+                <h3>Product Name</h3>
+                <h6 class="text-muted">Product description goes here</h6>
+                <hr>
+                <p>Here is the detailed description of the product you are purchasings. It is an awesome product more likely you will want more than one trust us. It is made from the best stuff that we locally sourced and took the time to craft every piece.</p>
+                <p><strong>Includes:</strong>
+                    <ul>
+                        <li>One Item Here</li>
+                        <li>Two plates for diners</li>
+                        <li>5 course meal</li>
+                        <li>Online access for experience</li>
+                        <li>candle</li>
+                    </ul>
+                    </p>
+
+                <div class="input-group col-4">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="fa fa-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number " value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="fa fa-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="addToCart col mx-auto">
+                    <button class="btn btn-primary mt-4" role="button">Add to Cart</button>
+                </div>
+            </div>
+         
+        </div>
+    </div>
 
     <footer class="container-fluid site-footer py-3">
         <div class="container">
@@ -203,7 +168,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
-
 </body>
-
 </html>
